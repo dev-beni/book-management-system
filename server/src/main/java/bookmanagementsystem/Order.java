@@ -1,12 +1,17 @@
 package bookmanagementsystem;
 
+import org.aspectj.weaver.ast.Or;
+
+import javax.persistence.Entity;
 import javax.persistence.*;
+import javax.persistence.Table;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import static javax.persistence.CascadeType.ALL;
+
 @Entity
 @Table(name = "orders")
 public class Order {
